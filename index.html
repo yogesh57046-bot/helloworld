@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>To My Ammu Kutty ❤️</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- 🎵 ADD YOUR MUSIC FILE: put a file named song.mp3 inside /music -->
+<audio id="bg-music" loop>
+  <source src="music/song.mp3" type="audio/mpeg">
+</audio>
+<button id="music-toggle" aria-label="Toggle music">🔇</button>
+
+<div id="cursor-heart"></div>
+<div id="floating-hearts"></div>
+
+<!-- INTRO -->
+<section id="intro">
+  <div class="intro-inner">
+    <p class="intro-line">Hey Ammu Kutty... ❤️</p>
+    <p class="intro-line">I made something special for you.</p>
+    <button id="open-surprise">Open Your Surprise 🎁</button>
+  </div>
+</section>
+
+<div id="site" hidden>
+
+<!-- NAV -->
+<nav id="navbar">
+  <span class="brand">❤️ Ammu Kutty</span>
+  <button id="hamburger" aria-label="Menu">☰</button>
+  <ul id="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#story">Story</a></li>
+    <li><a href="#kavithai">Kavithaigal</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#surprises">Surprises</a></li>
+    <li><a href="#letter">Letter</a></li>
+    <li><a href="#final">Final Surprise</a></li>
+  </ul>
+</nav>
+<div id="progress-bar"></div>
+
+<!-- HERO -->
+<header id="home" class="hero">
+  <h1>To My Ammu Kutty <span class="heart-glow">❤️</span></h1>
+  <p id="typing-subtitle" class="subtitle"></p>
+</header>
+
+<!-- STORY -->
+<section id="story" class="section reveal">
+  <h2>Our Little Story 💕</h2>
+  <div class="timeline">
+    <div class="tl-card reveal"><h3>The Beginning 🌸</h3><p><!-- Replace with how you two met -->Add your memory of how it all started here.</p></div>
+    <div class="tl-card reveal"><h3>Then Came The Smiles 😊</h3><p><!-- Replace with a memory -->Add a moment that made you both smile.</p></div>
+    <div class="tl-card reveal"><h3>Beautiful Little Memories ✨</h3><p><!-- Replace with a memory -->Add a small memory that means a lot.</p></div>
+    <div class="tl-card reveal"><h3>Every Conversation Became Special 💗</h3><p><!-- Replace with a memory -->Add what your conversations felt like.</p></div>
+    <div class="tl-card reveal"><h3>And Somehow... You Became My Favorite Person ❤️</h3><p><!-- Replace with a memory -->Add the moment you realized this.</p></div>
+  </div>
+</section>
+
+<!-- LETTER -->
+<section id="letter" class="section reveal">
+  <h2>For My Ammu Kutty 💌</h2>
+  <div class="letter-paper glass">
+    <p>My dearest Ammu Kutty,</p>
+    <p>I don't know exactly how to start this, so I'll just start simple — thank you. Thank you for being the kind of person who makes ordinary days feel a little softer, a little brighter.</p>
+    <div class="letter-more" hidden>
+      <p>There's something about the way you talk about the little things in your day that I look forward to. I notice it more than you probably think.</p>
+      <p>I'm not writing this to sound perfect or poetic. I just wanted one place where I could say, without rushing, that you matter to me — quietly, steadily, and completely.</p>
+      <p>So here it is, Ammu Kutty. A small corner of the internet, made with a lot of care, just for you.</p>
+      <p>With all my heart,<br>Yours ❤️</p>
+    </div>
+    <button id="read-more">Read More ❤️</button>
+  </div>
+</section>
+
+<!-- KAVITHAI -->
+<section id="kavithai" class="section reveal">
+  <h2>Kavithaigal For Ammu Kutty 🌙</h2>
+  <div class="poem-card glass">
+    <p id="poem-text" class="poem-text"></p>
+    <button id="next-poem">Next Kavithai →</button>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" class="section reveal">
+  <h2>Our Beautiful Little Gallery 📸</h2>
+  <!-- Replace each .polaroid img src with your own photo, e.g. images/photo1.jpg -->
+  <div class="gallery-grid">
+    <div class="polaroid reveal"><div class="ph-img"></div><p>One beautiful memory ❤️</p></div>
+    <div class="polaroid reveal"><div class="ph-img"></div><p>That smile...</p></div>
+    <div class="polaroid reveal"><div class="ph-img"></div><p>Forever special ✨</p></div>
+    <div class="polaroid reveal"><div class="ph-img"></div><p>A moment worth remembering 💕</p></div>
+    <div class="polaroid reveal"><div class="ph-img"></div><p>One beautiful memory ❤️</p></div>
+    <div class="polaroid reveal"><div class="ph-img"></div><p>That smile...</p></div>
+  </div>
+</section>
+
+<!-- SURPRISES -->
+<section id="surprises" class="section reveal">
+  <h2>Some Little Surprises For You 🎁</h2>
+  <div class="surprise-grid" id="surprise-grid"></div>
+</section>
+
+<!-- WHY SPECIAL -->
+<section id="special" class="section reveal">
+  <h2>Why Ammu Kutty Is Special ❤️</h2>
+  <div class="flip-grid" id="flip-grid"></div>
+</section>
+
+<!-- MESSAGE GENERATOR -->
+<section id="messages" class="section reveal">
+  <h2>A Little Message For You 💌</h2>
+  <p id="random-message" class="random-message">Click below for something sweet.</p>
+  <button id="gen-message">Give Me A Random Message ❤️</button>
+</section>
+
+<!-- COUNTDOWN -->
+<section id="countdown-section" class="section reveal">
+  <h2>Counting Down To Our Special Moment ⏳❤️</h2>
+  <div class="countdown" id="countdown">
+    <div><span id="cd-days">0</span><label>Days</label></div>
+    <div><span id="cd-hours">0</span><label>Hours</label></div>
+    <div><span id="cd-mins">0</span><label>Minutes</label></div>
+    <div><span id="cd-secs">0</span><label>Seconds</label></div>
+  </div>
+</section>
+
+<!-- FINAL SURPRISE -->
+<section id="final" class="section reveal">
+  <div id="final-intro">
+    <p>There's one final surprise...</p>
+    <button id="open-final">Open It ❤️</button>
+  </div>
+  <div id="final-content" hidden>
+    <div id="final-stars"></div>
+    <p id="final-text" class="final-text"></p>
+  </div>
+</section>
+
+<!-- SECRET -->
+<footer id="secret-footer">
+  <button id="secret-heart" aria-label="Secret heart">🖤</button>
+  <p id="secret-msg" hidden>Okay... you found my secret.<br>I just wanted to say...<br>Ammu Kutty ❤️ You are very, very special.</p>
+</footer>
+
+<button id="back-to-top">↑</button>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
